@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <style>
+        .explore-heading {
+            font-family: Playfair Display;
+            font-size: 58px;
+            font-weight: 700;
+            line-height: 60px;
+        }
+        .hover-bg-gray-light:hover {
+            background-color: #F3F4F6;
+        }
+        .btn-grow:hover {
+            transform: scale(1.2);
+        }
+        .btn-opacity-hover:hover {
+            transition: opacity 0.3s ease;
+            opacity: 0.85;
+        }
+        @media (max-width: 832px) {
+            .grid-cols-2 {
+                grid-template-columns: 1fr;
+            }
+            explore-heading{
+                color: yellow;
+            }
+            .png{
+                display: none;
+            }
+            .background{
+                 display: block;
+            }
+            /* Butonlar ve menüler arasında boşluq */
+            .space-y-4 > * {
+                margin-bottom: 1rem;
+            }   body {
+            background-image: url('./thousand-01 1.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<header class="flex flex-wrap justify-center px-10 py-6">
+    <div class="w-11 h-11">
+        <!-- Navbar içindeki img -->
+        <img src="logo (1).png" class="w-11 h-11" alt="">
+    </div>
+    <div class="flex flex-wrap gap-5 items-center space-x-6">
+        <!-- Navbar içindeki menu -->
+        <ul class="flex flex-wrap items-center space-x-6">
+            <li><a href="#" class="font-semibold text-white hover:text-yellow-500">empty</a></li>
+            <li><a href="#" class="font-semibold text-black-500 hover:text-yellow-500">Home</a></li>
+            <li><a href="#" class="font-semibold text-gray-500 hover:text-yellow-500">Destinations</a></li>
+            <li><a href="#" class="font-semibold text-gray-500 hover:text-yellow-500">About</a></li>
+            <li><a href="#" class="font-semibold text-gray-500 hover:text-yellow-500">Partner</a></li>
+        </ul>
+   
+     <div class="flex gap-5">
+         <button class="w-32 h-12 top-10 left-96 bg-white rounded-full border border-yellow-500 flex items-center justify-center cursor-pointer text-yellow-500 btn-grow btn-opacity-hover">Login</button>
+         <button class="w-32 h-12 bg-yellow-500 text-white rounded-full border border-yellow-500 flex items-center justify-center cursor-pointer ml-4 btn-grow btn-opacity-hover">Register</button>
+     </div>
+   
+        </div>
+</header>
+<section class="flex justify-between px-10">
+    <div>
+        <p class="explore-heading font-bold">
+            Explore and <br />
+            Travel
+        </p>
+        <p class="font-inter">Holiday finder</p>
+        <span class="inline-block w-32 h-2 bg-black"></span>
+     <!-- Formlar -->
+<section class=" py-6">
+    <div class="grid grid-cols-2 gap-x-6">
+        <div>
+            <label for="location" class="text-sm font-medium text-gray-700" ></label>
+            <select id="location" name="location" class="block w-full mt-1 border border-gray-300 rounded-md shadow-sm focus:border-yellow-500 focus:ring focus:ring-yellow-500 focus:ring-opacity-50">
+                <option value="" disabled selected>Kita Seçin</option>
+                <option value="Africa">Africa</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="Oceania">Oceania</option>
+                <option value="South America">South America</option>
+            </select>
+        </div>
+        <div>
+            <label for="activity" class="text-sm font-medium text-gray-700"></label>
+            <select id="activity" name="activity" class="block w-full mt-1 border border-gray-300 rounded-md shadow-sm focus:border-yellow-500 focus:ring focus:ring-yellow-500 focus:ring-opacity-50">
+                <option value="" disabled selected>Activity Seçin</option>
+                <optgroup label="Africa">
+                    <option value="Safari">Safari</option>
+                    <option value="Cultural Tours">Cultural Tours</option>
+                    <option value="Wildlife Watching">Wildlife Watching</option>
+                </optgroup>
+                <optgroup label="Asia">
+                    <option value="Temples and Shrines Visit">Temples and Shrines Visit</option>
+                    <option value="Tea Ceremony">Tea Ceremony</option>
+                    <option value="Martial Arts Training">Martial Arts Training</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="Art Museums Visits">Art Museums Visits</option>
+                    <option value="Historical Site Tours">Historical Site Tours</option>
+                    <option value="Culinary Tours">Culinary Tours</option>
+                </optgroup>
+                <optgroup label="North America">
+                    <option value="Hiking">Hiking</option>
+                    <option value="Beach Relaxation">Beach Relaxation</option>
+                    <option value="Skiing">Skiing</option>
+                </optgroup>
+                <optgroup label="Oceania">
+                    <option value="Scuba Diving">Scuba Diving</option>
+                    <option value="Surfing">Surfing</option>
+                    <option value="Bungee Jumping">Bungee Jumping</option>
+                </optgroup>
+                <optgroup label="South America">
+                    <option value="Amazon Rainforest Tours">Amazon Rainforest Tours</option>
+                    <option value="Tango Dance Classes">Tango Dance Classes</option>
+                    <option value="Mountaineering">Mountaineering</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="grade" class="text-sm font-medium text-gray-700"></label>
+            <select id="grade" name="grade" class="block w-full mt-1 border border-gray-300 rounded-md shadow-sm focus:border-yellow-500 focus:ring focus:ring-yellow-500 focus:ring-opacity-50">
+                <option value="" disabled selected>Grade Seçin</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div>
+            <label for="date" class="text-sm font-medium text-gray-700"></label>
+            <input placeholder="Date" type="date" id="date" name="date" class="block w-full mt-1 border border-gray-300 rounded-md shadow-sm focus:border-yellow-500 focus:ring focus:ring-yellow-500 focus:ring-opacity-50">
+        </div>
+    </div>
+    <div class="py-6">     
+        <button class="w-32 h-12 bg-yellow-500 text-white rounded-full border border-yellow-500 flex items-center justify-center cursor-pointer ml-4 btn-grow btn-opacity-hover">Explore</button>
+    </div>
+</section>
+</div>
+<div>
+    <img src="./thousand-01 1.png" alt="" class="png w-2/3 h-3/3 bg-right" />
+</div>
+</section>
+</body>
+</html>
